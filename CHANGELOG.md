@@ -9,7 +9,8 @@ Version 0.1.0 represents the first release of this fork.
 
 ### Added
 
-- Added CHANGELOG.md
+- Added CHANGELOG.md for this repository.
+- Added CHANGELOG.md for the template.
 
 ### Changed
 
@@ -45,6 +46,7 @@ Version 0.1.0 represents the first release of this fork.
 
 - Updated README to reflect new project scope.
 - Modified build script so it respects `Private :: Do Not Upload` classifier; builds without publishing if present.
+- Moved uv to version 0.9.5
 
 ### Removed
 
