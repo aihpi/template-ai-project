@@ -34,7 +34,7 @@ The template offers:
 - **codespell** for spell checking
 - Preconfigured **GitHub Actions** workflows:
   - Continuous Integration (lint + type check + tests)
-  - Optional publish-to-PyPI workflow
+  - Package building and optional publish-to-PyPI workflow
 - Generated projects include modular, editable docs:
   - `installation.md` – how to set up and install dependencies  
   - `development.md` – development workflows (tests, linting, formatting, etc.)  
