@@ -36,15 +36,6 @@ jobs:
 
       - name: Build package
         run: uv build
-
-      - name: Check if package is private
-        id: check_private
-        run: |
-          if grep -q 'Private :: Do Not Upload' pyproject.toml; then
-            echo "This package is private. Skipping PyPI upload."
-            exit 78  # Neutral exit — marks the step as skipped
-          fi
-
-      - name: Publish to PyPI
-        if: success()
-        run: uv publish --trusted-publishing always
+#
+#      - name: Publish to PyPI
+#        run: uv publish --trusted-publishing always

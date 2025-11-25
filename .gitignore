@@ -183,6 +183,3 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
-
-# Data files
-data/

@@ -1,8 +1,7 @@
 ## Publishing Releases
 
 This is how to publish a Python package to [**PyPI**](https://pypi.org/) from GitHub
-Actions, when using the
-[**simple-modern-uv**](https://github.com/jlevy/simple-modern-uv) template.
+Actions, when using this template.
 
 Thanks to [the dynamic versioning
 plugin](https://github.com/ninoseki/uv-dynamic-versioning/) and the
@@ -64,8 +63,3 @@ For the purposes of this example replace OWNER and PROJECT with the right values
 
 Just create a new release!
 Everything is the same as the last two steps above.
-
-* * *
-
-*This file was built with
-[simple-modern-uv](https://github.com/jlevy/simple-modern-uv).*
