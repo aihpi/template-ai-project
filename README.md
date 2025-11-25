@@ -12,7 +12,7 @@ Use **uvinit** with the AI HPI template:
 uvx uvinit --template gh:aihpi/template-ai-project
 ```
 
-Then, just follow the instructionsd.
+Then, just follow the instructions.
 
 ## What is this?
 
