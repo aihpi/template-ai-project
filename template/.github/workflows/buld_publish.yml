@@ -21,7 +21,7 @@ jobs:
       - name: Install uv (official Astral action)
         uses: astral-sh/setup-uv@v5
         with:
-          version: "0.8.13"
+          version: "0.9.11"
           enable-cache: true
           python-version: "3.12"
 
@@ -37,8 +37,14 @@ jobs:
       - name: Build package
         run: uv build
 
+      - name: Check if package is private
+        id: check_private
+        run: |
+          if grep -q 'Private :: Do Not Upload' pyproject.toml; then
+            echo "This package is private. Skipping PyPI upload."
+            exit 78  # Neutral exit — marks the step as skipped
+          fi
+
       - name: Publish to PyPI
+        if: success()
         run: uv publish --trusted-publishing always
-        # Although uv is newer and faster, the "official" publishing option is the one from PyPA,
-        # which uses twine. If desired, replace `uv publish` with:
-        # uses: pypa/gh-action-pypi-publish@release/v1

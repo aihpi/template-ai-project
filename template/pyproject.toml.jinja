@@ -31,7 +31,7 @@ classifiers = [
     "Programming Language :: Python :: 3.13",
     "Typing :: Typed",
     # Include this to avoid accidentally publishing to PyPI:
-    # "Private :: Do Not Upload",
+    "Private :: Do Not Upload",
 ]
 
 
@@ -88,7 +88,7 @@ packages = ["src/{{ package_module }}"]
 
 [tool.ruff]
 # Set as desired, typically 88 (black standard) or 100 (wide).
-line-length = 100
+line-length = 88
 
 [tool.ruff.lint]
 select = [
