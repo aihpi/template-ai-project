@@ -1,6 +1,13 @@
-# AI Project Template
+<div style="background-color: #ffffff; color: #000000; padding: 10px;">
+<img src="assets/logo_aisc_bmftr.jpg">
+<h1> AI Project Template
+</div>
 
 A lightweight, modern Python project template used by the **AI Service Center Berlin-Brandenburg (HPI)** for AI project repositories.
+
+![Screenshot of a generated project](assets/screenshot_app.png)
+
+Replace `assets/screenshot_app.png` with a screenshot. Keep the image under the description so it is the first thing a visitor sees after the title; a 1280 by 720 PNG renders well on GitHub.
 
  and provides a clean, standardized starting point for AI projects by the [AI Service Center Berlin-Brandenburg](https://github.com/aihpi).
 
@@ -40,12 +47,15 @@ The template offers:
   - `development.md` – development workflows (tests, linting, formatting, etc.)  
   - `publishing.md` – how to publish releases (if relevant)
 
+## Blueprint capture
+
+Every generated project carries a `casebook.yaml` that names the AI service blueprints the project feeds (see [aihpi/template-blueprint](https://github.com/aihpi/template-blueprint)), a `CLAUDE.md` that tells Claude Code to write insights into the local clone of `blueprint-<slug>/casebook/` only through the casebook skills of the kisz marketplace and only after confirmation, and a `PreCompact` hook in `.claude/settings.json` that scans the session before the context is compacted. The kick-off guide in `.claude/guides/kickoff.md` explains how to fill `casebook.yaml`. The casebook skills are not yet available; the hook is a stub until then.
+
 ## What this template doesn't include
 
 This template doesn't include:
 
 - Domain-specific AI frameworks or dependencies (e.g., PyTorch, TensorFlow, Hugging Face)  
-- Integration with AI-assistant IDE rules.
 - Data pipelines or preprocessing scripts  
 - Complex deployment tooling (Docker, Kubernetes, cloud CI/CD)  
 - Detailed documentation templates beyond basic `installation.md`, `development.md`, and `publishing.md`  

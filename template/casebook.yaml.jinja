@@ -1,0 +1,10 @@
+# Which blueprints this pilot project feeds. Read by the casebook skills; see .claude/guides/kickoff.md.
+schema: 1
+project: {{ package_name }}
+partner: changeme              # organization name only, no contact data
+blueprints:
+  - slug: changeme             # repository aihpi/blueprint-<slug>, local clone $KISZ_BLUEPRINTS_DIR/blueprint-<slug>, see .claude/guides/kickoff.md
+    case: {{ package_name | replace("pilotproject-", "") }}   # the [case] tag and the file 03_02_<nn>_<case>.md
+    questions: []              # IDs from blueprint-<slug>/blueprint/02_01_research_questions.md, for example [RQ1, RQ3]
+    since: changeme            # YYYY-MM-DD
+    until:                     # set when this project stops feeding the blueprint; never delete an entry
