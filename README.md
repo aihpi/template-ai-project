@@ -49,7 +49,7 @@ The template offers:
 
 ## Blueprint capture
 
-Every generated project carries a `casebook.yaml` that names the AI service blueprints the project feeds (see [aihpi/template-blueprint](https://github.com/aihpi/template-blueprint)), a `CLAUDE.md` that tells Claude Code to write insights into the local clone of `blueprint-<slug>/casebook/` only through the casebook skills of the kisz marketplace and only after confirmation, and a `PreCompact` hook in `.claude/settings.json` that scans the session before the context is compacted. The kick-off guide in `.claude/guides/kickoff.md` explains how to fill `casebook.yaml`. The casebook skills are not yet available; the hook is a stub until then.
+Every generated project carries a `casebook.yaml` that names the AI service blueprints the project feeds (see [aihpi/template-blueprint](https://github.com/aihpi/template-blueprint)), a `CLAUDE.md` that tells Claude Code to write insights into the local clone of `blueprint-<slug>/casebook/` only through the casebook skills of the kisz marketplace and only after confirmation, and a `PreCompact` hook in `.claude/settings.json` that scans the session before the context is compacted. The kick-off interview (skill `kickoff-interview`, plugin kisz-code) fills `casebook.yaml`. The plugin comes with the claude.ai organization of the KI-Servicezentrum: signed in to Claude Code with a claude.ai account, you get it by sync, and `/plugin` lists it as `synced`; a plugin that is missing there is added once in claude.ai under Customize, Plugins, Discover (see the README of the kisz marketplace, section "Install"). The casebook skills are not yet available; the hook is a stub until then.
 
 ## What this template doesn't include
 

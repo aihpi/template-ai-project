@@ -6,6 +6,8 @@ _message_after_copy: |
     Your package template has been copied!
 
     Remember to look for any unfilled `changeme` strings and confirm the license!
+    The file `casebook.yaml` is filled by the kick-off interview and is complete when it says `kickoff: done`.
+
     By default this template uses MIT license.
     See `license` in pyproject.yaml and update the LICENSE file. 
 
