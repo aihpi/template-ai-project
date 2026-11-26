@@ -1,10 +1,18 @@
-# Which blueprints this pilot project feeds. Read by the casebook skills; see .claude/guides/kickoff.md.
-schema: 1
+# Link between this project and the blueprints of the KI-Servicezentrum that it feeds.
+# The kick-off interview (skill kickoff-interview, plugin kisz-code) fills the empty fields.
+schema: 2
 project: {{ package_name }}
-partner: changeme              # organization name only, no contact data
-blueprints:
-  - slug: changeme             # repository aihpi/blueprint-<slug>, local clone $KISZ_BLUEPRINTS_DIR/blueprint-<slug>, see .claude/guides/kickoff.md
-    case: {{ package_name | replace("pilotproject-", "") }}   # the [case] tag and the file 03_02_<nn>_<case>.md
-    questions: []              # IDs from blueprint-<slug>/blueprint/02_01_research_questions.md, for example [RQ1, RQ3]
-    since: changeme            # YYYY-MM-DD
-    until:                     # set when this project stops feeding the blueprint; never delete an entry
+partner:                # organization name only, no contact data
+partner_kind:           # public body, SME, research group, start-up, internal
+team: []                # contributors from our team, lead first; quote each name, for example ["Surname, F."], because a comma splits an unquoted name
+kickoff: open           # open, started, done
+do_not_publish: []      # general labels only (for example "names of partner staff", "the partner's internal documents"), never the confidential detail itself, because this file is published with the repository
+blueprints: []          # one entry per blueprint: slug, case, questions, since, until
+# Example entry (replace "blueprints: []" above by a list like this):
+# blueprints:
+#   - slug: rag-public-sector   # repository aihpi/blueprint-rag-public-sector
+#     case: {{ package_name | replace("pilotproject-", "") }}   # the [case] tag in the casebook
+#     questions: []             # slugs of the research question pages in the casebook
+#     since:                    # YYYY-MM-DD
+#     until:                    # set when the project stops feeding the blueprint
+# Never delete an entry. Set "until" when the project stops feeding the blueprint.
